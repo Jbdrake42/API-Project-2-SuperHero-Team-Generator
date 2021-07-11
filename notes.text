@@ -1,0 +1,240 @@
+7 archtypes
+
+1. fast/agile
+    1: spiderman: 620
+    2: flash: 265
+    3: quicksilver: 536
+    4: nightcrawler: 490
+    5: Dash: 209
+    6: Jolt: 371
+    7: nightwing: 491
+    8: Daredevil: 201
+    9: beast: 75	
+    10: Impulse: 340
+2. strong
+    1: superman: 644
+    2: hulk: 332
+    3: thing: 658
+    4: WonderWoman: 720
+    5: thor: 659
+    6: Citizen Steel: 177	
+    7: Colossus :185
+    8: Mr Incredible: 476
+    9: Sentry: 583
+    10: power girl: 524
+3. tech
+    1: forge: 268
+    2: adam stange: 8
+    3: Data: 210
+    4: Machine Man: 422
+    5: ironman: 346
+    6: Bionic Woman: 87	
+    7: Donatello: 228
+    8: Vision: 697
+    9: Spock: 627
+    10: Astro Boy: 47	
+4. magic
+    1: captain marvel/ the good one:
+    2: zatanna: 730	
+    3: steven stange: 226
+    4: Doctor Fate: 224
+    5: etrigan: 246	
+    6: Hellboy: 322
+    7: Raven: 542
+    8: luke skywalker: 418
+    9: Harry Potter: 310	
+    10: Ghost Rider: 280
+5. grit
+    1: winter soldier: 714
+    2: wolverine: 717
+    3: x-23: 723
+    4: Judge Dredd: 373
+    5: black widow: 107	
+    6: warmachine : 703
+    7: punisher: 530
+    8: Cable: 145
+    9: Raphael: 541
+    10: Venom: 687
+6. comic relief
+    1: deadpool: 213	
+    2: blue beatle: 123
+    3: morph: 473	
+    4: Paul Blart: 510
+    5: Michelangelo: 450
+    6: Jar Jar Binks: 354	
+    7: Question: 535	
+    8: Plastic Man: 520
+    9: Rey: 555	
+    10: Speedball: 614
+
+7. badass normal
+    1: Allan Quatermain : 19
+    2: batman: 70
+    3: James Bond: 352
+    4: Huntress: 334	
+    5: Indiana Jones: 341	
+    6: green arrow: 298	
+    7: hawkeye: 313
+    8: moskingbird: 462
+    9: Ronin: 568
+    10: Shang-Chi: 587
+
+8. leader 
+    1: Cyclops : 196
+    2: captain america: 149	
+    3: James T. Kirk: 353
+    4: Captain Britain: 151
+    5: Leonardo: 404
+    6: starlord: 630
+    7: Rick Flag: 557
+    8: Storm: 638	
+    9: nick fury: 489
+    10: mister fantastic: 456
+
+9. cosmic
+    1: alan scott: 14
+    2: hal jordan : 306
+    3: silver surfer: 598
+    4: Firelord: 258	
+    5: Phoenix: 517
+    6: One Punch Man: 502
+    7: Nova: 496
+    8: Godzilla: 287	
+    9: Gravity: 296
+    10: Spectre: 613
+
+10. alien
+    1: Abe Sapien: 2
+    2: martioan manhuner: 432
+    3: miss martian: 455
+    4: Ben 10: 78
+    5: Beta Ray Bill: 79
+    6: Dr Manhattan: 233
+    7: Nebula: 487	
+    8: Alien: 18
+    9: Goku: 289
+    10: Rocket Raccoon: 566
+
+11. team archnemisis
+1. 414	Loki
+2. 208	Darth Vader
+3. 574	Sauron
+4. 232	Dormammu
+5. 204	Darkseid
+6. 423	Magneto
+7. 401	Leader
+8. 655	Thanos
+9. 680	Ultron
+10. 136	Brainiac
+
+12. sidekick
+ 1. 488	Negasonic Teenage Warhead
+ 2. 454	Misfit
+ 3. 372	Jubilee
+ 4. 351	Jack-Jack
+ 5. 330	Hope Summers
+ 6. 563	Robin III
+ 7. 616	Speedy
+ 8. 618	Spider-Girl
+ 9. 633	Stargirl
+ 10. 718	Wonder Girl
+
+let fastAgile = [620,265,536,490,209,371,491,201,75,340,] col1
+
+let strong = [644,332,658,720,659,177,185,476,583,524] col1
+
+let tech = [268,8,210,422,346,87,228,697,627,47] col2 col3
+
+let magic = [156,730,226,224,246,322,542,418,310,280] col2
+
+let grit = [714,717,723,373,107,703,530,145,541,687] col2
+
+let comicRelief = [213,123,473,510,450,354,535,520,555,614] col3
+
+let badAss = [19,70,352,334,341,298,313,462,568,587] col1
+
+let leader = [196,149,353,151,404,630,557,638,489,456] col1
+
+let cosmic = [14,306,598,258,517,502,496,287,296,613] col2
+
+let alien = [2,432,455,78,79,233,487,18,289,566] col3
+
+nemeis col3
+
+fetchGrit(hero) {
+
+    url = baseUrl + badAss[randomNumber(1, 10)]
+    fetch(url, {
+        method: "GET"
+    })
+        .then(function (results) {
+            console.log(results)
+            return results.json()
+        })
+        .then(function (hero) {
+            displayGrit(hero)
+        })
+}
+
+function displayGrit(hero) {
+    let card = document.createElement('div')
+    card.className = 'card'
+    let heroType = document.createElement('h1')
+    heroType.innerText = `Gritty Hero`
+    let image = document.createElement('img')
+    hero.image.url !== undefined ? image.src = hero.image.url : ''
+
+     let name = document.createElement('h2')
+            hero.name !== undefined ? name.innerText = `Code Name: ${hero.name}` : ''
+            let secretIdentity = document.createElement('h3')
+            hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+
+                function displayFast(hero){            
+            let card = document.createElement('div')
+            card.className = 'card'
+            let heroType = document.createElement('h1')
+            heroType.innerText = `Fast/Agile Hero`
+            let images = document.createElement('img')
+            hero.image.url !== null ? images.src = hero.image.url : ''
+            let name = document.createElement('h2')
+            hero.name !== undefined ? name.innerText = `Code Name: ${hero.name}` : ''
+            let secretIdentity = document.createElement('h3')
+            hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+            let powerstats = document.createElement('h3')
+            powerstats.innerText = 'Hero Stats'
+            let intellegence = document.createElement('p')
+            intellegence.innerText = `Intellegence: ${hero.powerstats.intelligence} `
+            let strength = document.createElement('p')
+            strength.innerText = `Strength: ${hero.powerstats.strength}`
+            let speed = document.createElement('p')
+            speed.innerText = `Speed: ${hero.powerstats.speed}`
+            let durability = document.createElement('p')
+            durability.innerText = `Durability: ${hero.powerstats.durability}`
+            let power = document.createElement('p')
+            power.innerText = `Power: ${hero.powerstats.power} `
+            let combat = document.createElement('p')
+            combat.innerText = `Combat Capability: ${hero.powerstats.combat}`
+            card.appendChild(heroType)
+            card.appendChild(images)
+            card.appendChild(name)
+            card.appendChild(secretIdentity)
+            card.appendChild(powerstats)
+            card.appendChild(intellegence)
+            card.appendChild(strength)
+            card.appendChild(speed)
+            card.appendChild(durability)
+            card.appendChild(power)
+            card.appendChild(combat)
+            cardholder.appendChild(card)
+        }
+
+hero title formats
+
+the location 
+
+the viture organization(the justice league, the )
+
+
+let 
+
+let virtues = ['Justice', Guardian, Defender, ]

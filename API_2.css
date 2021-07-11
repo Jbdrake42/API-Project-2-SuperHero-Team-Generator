@@ -1,0 +1,75 @@
+img{
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+    border: solid #EBEBD3 3px;
+    border-radius: 10px;
+}
+
+
+body{
+    background-color: #DA4151;
+}
+
+button{
+    text-align: center;
+    background-color: #083DA5;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.card{
+    display: flex;
+    text-align: center;
+    background-color: #083DA5;
+    color: #EBEBD3;
+    border: sol;
+    margin-bottom: 30px;
+    height: 83vh;
+    border: solid #EBEBD3 5px;
+    border-radius: 10px;
+}
+
+#teamName{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid #EBEBD3 5px;
+    background-color: #083DA5;
+    color: #EBEBD3;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#Top{
+    text-align: center;
+    font-size: 100px;
+    color: #083DA5;
+    text-shadow: 3px 0 0 #EBEBD3, -3px 0 0 #EBEBD3, 0 3px 0 #EBEBD3, 0 -3px 0 #EBEBD3, 2px 2px #EBEBD3, -2px -2px 0 #EBEBD3, 2px -2px 0 #EBEBD3, -2px 2px 0 #EBEBD3;
+}
+
+#buttonHolder{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.powerstat{
+    font-weight: bold;
+}
+
+#cardHolder{
+    display: flex;
+}
+
