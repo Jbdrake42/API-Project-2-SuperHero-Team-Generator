@@ -34,5 +34,28 @@
       </div>
     </div>
 <script src="./API_2.js" type="text/javascript"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAGtc9HjQuf775NjPOzpMfbGqia5sdhm3E",
+    authDomain: "superhero-team-generator.firebaseapp.com",
+    projectId: "superhero-team-generator",
+    storageBucket: "superhero-team-generator.appspot.com",
+    messagingSenderId: "112295159526",
+    appId: "1:112295159526:web:4e39c5eacc53d02c1f7d27",
+    measurementId: "G-TQMH2F7PJ4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
