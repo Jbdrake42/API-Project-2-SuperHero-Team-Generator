@@ -196,7 +196,7 @@ function displayStrong(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -237,7 +237,7 @@ function displayTech(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -278,7 +278,7 @@ function displayMagic(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -320,7 +320,7 @@ function displayGrit(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -360,7 +360,7 @@ function displayComic(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -402,7 +402,7 @@ function displayBad(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -442,7 +442,7 @@ function displayLeader(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -482,7 +482,7 @@ function displayCosmic(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -522,7 +522,7 @@ function displayAlien(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -562,7 +562,7 @@ function displayNemesis(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 
@@ -602,7 +602,7 @@ function displaySidekick(hero) {
     let name = document.createElement('h2')
     name.innerText = hero.name
     let secretIdentity = document.createElement('h3')
-    hero.biography['full-name'] !== undefined ? secretIdentity.innerText = `Secret Identity: ${hero.biography['full-name']}` : ''
+    hero.biography['full-name'] !== undefined ? secretIdentity.innerhtml = `Secret Identity: <b> ${hero.biography['full-name']}` : ''
     let powerstats = document.createElement('p')
     powerstats.innerHTML = `<b>Hero Stats</b> <br> Intellegence: ${hero.powerstats.intelligence} <br> Strength: ${hero.powerstats.strength} <br>Speed: ${hero.powerstats.speed}<br>Durability: ${hero.powerstats.durability}<br>Power: ${hero.powerstats.power}<br>Power: ${hero.powerstats.power}<br>Combat: ${hero.powerstats.combat}`
 

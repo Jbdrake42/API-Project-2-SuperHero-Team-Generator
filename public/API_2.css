@@ -31,7 +31,7 @@ button{
     color: #EBEBD3;
     border: sol;
     margin-bottom: 30px;
-    height: 83vh;
+    height: auto;
     border: solid #EBEBD3 5px;
     border-radius: 10px;
 }
